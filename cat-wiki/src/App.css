@@ -1,0 +1,366 @@
+*{
+  font-size: 18px;
+  font-family: "Montserrat";
+}
+.App{
+  width:90%;
+  margin:auto;
+}
+nav a, .main-header h1{
+   font-family: "Mystery Quest";
+}
+nav {
+  margin: 5px 0 10px 0;
+}
+nav a{
+  font-size:1.2rem;
+  text-decoration: none;
+  color:black;
+}
+.main-header h1{
+  font-size:3rem;
+}
+h1{
+  font-size: 2.5rem;
+  font-family: "Montserrat";
+}
+.main-header{
+  background-image: url("../public/HeroImagelg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:white;
+  padding: 100px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.main-header span{ 
+  font-size: 1.2rem;
+  
+}
+.main-container{
+  border-radius: 10px;
+}
+
+.input-container {
+  background-color: white;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 10px 10px;
+	max-width: 300px;
+  color: black;
+  border-radius: 25px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.input-container input {
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+	flex: 1;
+	outline: none;
+	border: none;
+	font-size: 16px;
+	padding-left: 10px;
+}
+
+hr{
+  width:50px;
+  color:#4D270C;
+  background-color:#4D270C;
+  border:solid #4D270C 1.8px;
+  border-collapse:collapse ;
+  margin-top:5px;
+}
+
+.favourite-container{
+  background-color:#E3E1DC;
+  padding:20px 100px 100px 100px ;
+  border-bottom-left-radius: 25px ;
+  border-bottom-right-radius: 25px;
+}
+.favourites{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 60px;
+  align-items: center;
+}
+.favourite-header{ 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items:bottom;
+  margin: 1em 0;
+}
+
+.square-image{
+  aspect-ratio: 1/1;
+}
+figure{
+  max-height: 100%;
+  max-width: 100%;
+  display:inline;
+  align-items: center;
+}
+img{
+  max-width: 100%;
+  border-radius: 20px;
+  max-height: 100%;
+  object-fit: cover;
+  
+}
+.second-container{ 
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  margin-top:100px;
+  padding:20px 100px;
+  grid-gap: 100px;
+  align-items: center;
+}
+.second-container h1{
+  margin-bottom: 50px;
+}
+
+.image-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: end;
+  justify-content: end;
+  grid-gap: 20px;
+}
+#grid-item1{
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+}
+#grid-item2{
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+  margin-left: auto;
+}
+#grid-item3{
+  grid-row: 1 / span 2;
+  grid-column: 2 / span 1;
+}
+.second-container a{
+  color: #29150799;
+  display: block;
+  font-weight: 700; 
+  margin-top:50px;
+  text-decoration: none;
+}
+.breed-container{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 2em;
+  margin: 2em 0;
+  padding: 20px;
+  border-radius: 20px;
+}
+.breed-container:hover{
+  background-color:#E3E1DC;
+  cursor: pointer;
+}
+.breed-container h2{
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+.searching-container{
+  position: absolute;
+  background-color: white; 
+  width:100%;
+  top: 50px;
+  left:50%;
+  right:50%;
+  transform: translate(-50%);
+  border-radius: 15px;
+  padding:10px;
+  margin: 10px 0;
+}
+.searching{
+  max-height: 125px;
+  overflow-y: scroll;
+}
+.searching::-webkit-scrollbar {
+  width:5px;
+  background-color: #F2F2F2;
+  border-radius: 10px;
+}
+.searching::-webkit-scrollbar-thumb {
+
+  background: #BDBDBD; 
+  border-radius: 10px;
+}
+.searching span{
+font-size: 1rem;
+padding: 10px;
+margin-right: 15px;
+border-radius: 10px;
+}
+.searching span:hover{
+  background-color: #9797971A;
+  cursor: pointer;
+}
+
+.breed-description-container{
+  display:grid;
+  grid-template-columns: 1.25fr 3fr;
+  grid-column-gap: 150px ;
+  margin:  25px 75px;
+}
+.breed-description-container img{
+  aspect-ratio: 1/1; 
+}
+.breed-description-container h1 {
+  font-size: 2rem;
+  margin-bottom:1rem;
+}
+.breed-description-container p {
+  margin-bottom:1rem;
+}
+.breed-property{
+  margin: 1.5rem 0;
+}
+.breed-property span {
+  font-weight: bold;
+  margin-right: 5px;
+}
+.breed-property .bars-container{
+  display: inline-grid;
+  width:60%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+}
+.breed-property .bars-container .bar{
+  background-color:#E0E0E0;
+  display: block;
+  width:100%;
+  border-radius: 5px ;
+  height: 8px;
+}
+.breed-property .bars-container .full{
+  background-color:#544439;
+}
+#breed-page .image-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+#breed-page .image-container img{
+  aspect-ratio: 1/1;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 100px;
+  background-color: black;
+  color:white;
+  border-radius: 50px 50px 0 0 ;
+  margin-top: 25px;
+}
+.footer .logo{
+  font-family: "Mystery Quest";
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.footer a{
+  color:white;
+}
+.footer span{
+  font-weight: 100;
+}
+@media screen and (max-width:1200px){
+  .breed-description-container{
+    grid-column-gap: 100px ;
+    margin:  25px 25px;
+  }
+}
+@media screen and (max-width:950px) {
+  .favourites{
+    grid-column-gap:25px;
+  }
+  .favourite-container{
+   padding:20px 50px 50px 50px; 
+  }
+  .main-header{
+    padding: 50px;
+  }
+  .second-container{
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+    padding: 20px 50px;
+  }
+  .breed-description-container{
+    grid-column-gap: 50px ;
+    margin:  25px 0;
+  }
+}
+@media screen and (max-width:750px) {
+  .footer{
+    padding: 35px 25px;
+  }
+  .favourites{
+    grid-gap:25px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .favourite-header{
+    grid-template-columns: 1fr;
+
+  }
+  .breed-description-container{
+    grid-column-gap: 25px ;
+    
+  }
+  
+}
+@media screen and (max-width:650px) {
+  
+  .breed-description-container{
+    grid-template-columns: 1fr;
+    grid-column-gap: 25px ;
+    
+  }
+  #breed-page .image-container{
+    
+    grid-template-columns: 1fr 1fr ;
+  }
+  
+}
+@media screen and (max-width:550px) {
+  .footer{
+    flex-direction: column;
+  }
+  nav a{
+    font-size:1rem;
+  }
+  .main-header h1{
+    font-size:2rem;
+  }
+  h1{
+    font-size: 1.5rem;
+    font-family: "Montserrat";
+  }
+  .favourite-container{
+    padding:20px;
+   }
+   .main-header{
+    padding: 25px;
+    background-image: url("../public/HeroImagesm.png");
+  }
+  .second-container{
+    padding: 20px 25px;
+  }
+}
+@media screen and (max-width:450px) {
+  .breed-property .bars-container{
+    width:50%;
+    
+  }
+  #breed-page .image-container{
+    
+    grid-template-columns: 1fr ;
+  }
+}
+@media screen and (max-width:350px) {
+  .breed-property .bars-container{
+    width:35%;
+  }
+}
